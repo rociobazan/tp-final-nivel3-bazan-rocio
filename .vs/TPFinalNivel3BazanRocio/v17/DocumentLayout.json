@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Master.Master",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Master.Master",
+              "RelativeDocumentMoniker": "CatalogoWeb\\Master.Master",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Master.Master",
+              "RelativeToolTip": "CatalogoWeb\\Master.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-26T22:09:08.573Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
