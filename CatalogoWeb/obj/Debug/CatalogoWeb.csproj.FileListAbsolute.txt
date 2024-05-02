@@ -57,3 +57,7 @@ C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoW
 C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\obj\Debug\Catalogo.4B0600ED.Up2Date
 C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\obj\Debug\CatalogoWeb.dll
 C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\obj\Debug\CatalogoWeb.pdb
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\bin\Dominio.dll
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\bin\negocio.dll
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\bin\Dominio.pdb
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\CatalogoWeb\bin\negocio.pdb
