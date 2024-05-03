@@ -3,11 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\catalogoweb\\formularioarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\formularioarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\formularioarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E4EC984-3B04-438A-A944-81220CDD8C68}|..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\negocio.csproj|c:\\users\\rooba\\desktop\\gestor de articulos\\gestion de articulos\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\formularioarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -21,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormularioArticulos.aspx",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\FormularioArticulos.aspx",
-              "RelativeDocumentMoniker": "CatalogoWeb\\FormularioArticulos.aspx",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\FormularioArticulos.aspx",
-              "RelativeToolTip": "CatalogoWeb\\FormularioArticulos.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-30T00:33:57.413Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,22 +28,22 @@
               "RelativeDocumentMoniker": "CatalogoWeb\\FormularioArticulos.aspx.cs",
               "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\FormularioArticulos.aspx.cs",
               "RelativeToolTip": "CatalogoWeb\\FormularioArticulos.aspx.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAEwDYAAAANAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAkwFEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T01:56:45.857Z",
+              "WhenOpened": "2024-05-03T22:18:10.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "RelativeToolTip": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T02:15:43.609Z",
+              "Title": "FormularioArticulos.aspx",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\FormularioArticulos.aspx",
+              "RelativeDocumentMoniker": "CatalogoWeb\\FormularioArticulos.aspx",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\FormularioArticulos.aspx",
+              "RelativeToolTip": "CatalogoWeb\\FormularioArticulos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-03T13:12:10.112Z",
               "EditorCaption": ""
             }
           ]
