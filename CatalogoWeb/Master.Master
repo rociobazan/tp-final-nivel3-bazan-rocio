@@ -32,11 +32,16 @@
                                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                        <div class="d-flex">
+
+                        <%--<form class="d-flex" role="search">
+                            
+                            <asp:TextBox CssClass="form-control me-2" type="search" ID="tbxSearch" placeholder="Search" aria-label="Search" runat="server" />
+                            <asp:Button OnClick="btnSearch_Click" CssClass="btn btn-outline-success" ID="btnSearch" Text="Buscar" runat="server" />
+                        </form>--%>
+
+
+
+                        <div class="d-flex p-2">
                             <button class="btn btn-success" type="submit">Login</button>
                             <button class="btn btn-toolbar" type="submit">Registrarse</button>
                         </div>

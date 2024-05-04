@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominio;
+using negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,7 +11,13 @@ namespace CatalogoWeb
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {
+        
         protected void Page_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
         {
 
         }
