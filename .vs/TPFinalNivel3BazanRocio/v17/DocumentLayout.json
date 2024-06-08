@@ -3,19 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\catalogoweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\miperfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\miperfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\listadoarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\listadoarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\catalogoweb\\listadoarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\listadoarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E4EC984-3B04-438A-A944-81220CDD8C68}|..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\negocio.csproj|c:\\users\\rooba\\desktop\\gestor de articulos\\gestion de articulos\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A3176CF-83D7-4A62-935C-35DF11AD9279}|..\\..\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\dominio.csproj|c:\\users\\rooba\\desktop\\gestor de articulos\\gestion de articulos\\dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,58 +17,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "RelativeToolTip": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\ArticuloNegocio.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAYwFEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T19:46:50.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ListadoArticulos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\ListadoArticulos.aspx.cs",
-              "RelativeDocumentMoniker": "CatalogoWeb\\ListadoArticulos.aspx.cs",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\ListadoArticulos.aspx.cs",
-              "RelativeToolTip": "CatalogoWeb\\ListadoArticulos.aspx.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAowEMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T01:36:40.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ListadoArticulos.aspx",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\ListadoArticulos.aspx",
-              "RelativeDocumentMoniker": "CatalogoWeb\\ListadoArticulos.aspx",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\ListadoArticulos.aspx",
-              "RelativeToolTip": "CatalogoWeb\\ListadoArticulos.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-04T01:20:14.54Z",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
+              "RelativeToolTip": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T21:47:06.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Default.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Default.aspx.cs",
-              "RelativeDocumentMoniker": "CatalogoWeb\\Default.aspx.cs",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Default.aspx.cs",
-              "RelativeToolTip": "CatalogoWeb\\Default.aspx.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T23:47:23.942Z",
+              "Title": "MiPerfil.aspx",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\MiPerfil.aspx",
+              "RelativeDocumentMoniker": "CatalogoWeb\\MiPerfil.aspx",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\MiPerfil.aspx",
+              "RelativeToolTip": "CatalogoWeb\\MiPerfil.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-07T21:07:43.002Z",
               "EditorCaption": ""
             }
           ]

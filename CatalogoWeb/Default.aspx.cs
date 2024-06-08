@@ -29,6 +29,20 @@ namespace CatalogoWeb
             }
 
         }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                ListaArticulos = negocio.filtrar("Nombre", "contiene", txtSearch.Text);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
        
 }
