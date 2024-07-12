@@ -29,7 +29,7 @@
                                 <a class="nav-link" href="ListadoArticulos.aspx">Lista</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                <a class="nav-link active" Id="btnFav" href="" runat="server">Favoritos</a>
                             </li>
                         </ul>
 
@@ -42,8 +42,25 @@
 
 
                         <div class="d-flex p-2">
+                            <%if (!negocio.Seguridad.sesionActiva(Session["Usuario"]))
+                                {%>
                             <asp:Button class="btn btn-success" ID="btnLogin" OnClick="btnLogin_Click" Text="Login" runat="server" />
                             <asp:Button class="btn btn-toolbar" ID="btnRegistrarse" OnClick="btnRegistrarse_Click" Text="Registrarse" runat="server" />
+                            <%}
+                                else
+                                { %>
+                            <div class="mx-2 my-auto">
+                                <asp:LinkButton Text="text" ID="lblUser"  CssClass="text-light mx-auto me-2 text-decoration-none" OnClick="lblUser_Click" runat="server" />
+                            </div>
+                            <div class="mx-2">
+                                <asp:Image ID="imgAvatar" ImageUrl="https://img.freepik.com/vector-premium/icono-cuenta-icono-usuario-graficos-vectoriales_292645-552.jpg?w=740"
+                                    Style="height: 40px; width: 40px; border-radius: 50%;" runat="server" />
+                            </div>
+                            <div class="mx-2">
+                                <asp:Button CssClass="btn btn-danger" ID="btnCerrarSesion" OnClick="btnCerrarSesion_Click" Text="Salir" runat="server" />
+                            </div>
+
+                            <%} %>
                         </div>
                     </div>
                 </div>

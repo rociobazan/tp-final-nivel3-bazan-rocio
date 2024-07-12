@@ -43,6 +43,16 @@ namespace CatalogoWeb
                 throw;
             }
         }
+
+        protected void btnFavorito_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnDetalles_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Detalles.aspx", false);
+        }
     }
        
 }

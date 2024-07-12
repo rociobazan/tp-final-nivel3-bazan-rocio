@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CatalogoWeb.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Favoritos.aspx.cs" Inherits="CatalogoWeb.Favoritos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
@@ -13,18 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <div class="container mt-3">
-        <div class="row mb-3">
-            <div class="col-12 col-md-9 col-lg-8">
-                <div class="d-flex">
-                    <asp:TextBox CssClass="form-control me-2" type="search" ID="txtSearch" placeholder="Buscar" runat="server" />
-                    <asp:Button OnClick="btnBuscar_Click" CssClass="btn btn-primary" ID="btnBuscar" Text="Buscar" runat="server" />
-                </div>
-            </div>
-        </div>
 
+
+        <%if (!(ListaFavoritos is null))
+            { %>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <% 
-                foreach (Dominio.Articulo art in ListaArticulos)
+                foreach (Dominio.Articulo art in ListaFavoritos)
                 {
             %>
             <div class="col">
@@ -39,10 +34,19 @@
                                 <a href="Detalles.aspx?Id=<%:art.Id%>" class="btn btn-sm btn-outline-dark">Ver detalles</a>
                             </div>
                         </div>
-                    </div>yh
+
+
+                    </div>
                 </div>
             </div>
-            <%}%>
         </div>
+              <%}%>
+
+        <%}
+            else
+            {%>
+        <h2>Comience a agregar favoritos!! :D</h2>
+        <%} %>
     </div>
 </asp:Content>
+

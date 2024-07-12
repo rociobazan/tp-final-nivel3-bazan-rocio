@@ -3,11 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\miperfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\miperfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3176CF-83D7-4A62-935C-35DF11AD9279}|..\\..\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\dominio.csproj|c:\\users\\rooba\\desktop\\gestor de articulos\\gestion de articulos\\dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\favoritos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\favoritos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\catalogoweb\\detalles.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\detalles.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\detalles.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\detalles.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E4EC984-3B04-438A-A944-81220CDD8C68}|..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\negocio.csproj|c:\\users\\rooba\\desktop\\gestor de articulos\\gestion de articulos\\negocio\\favoritonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|c:\\users\\rooba\\desktop\\tpfinalnivel3bazanrocio\\tpfinalnivel3bazanrocio\\catalogoweb\\favoritos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}|CatalogoWeb\\CatalogoWeb.csproj|solutionrelative:catalogoweb\\favoritos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,32 +33,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
-              "RelativeDocumentMoniker": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
-              "RelativeToolTip": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\Dominio\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Detalles.aspx",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Detalles.aspx",
+              "RelativeDocumentMoniker": "CatalogoWeb\\Detalles.aspx",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Detalles.aspx",
+              "RelativeToolTip": "CatalogoWeb\\Detalles.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-12T00:18:17.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FavoritoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\negocio\\FavoritoNegocio.cs",
+              "RelativeDocumentMoniker": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\FavoritoNegocio.cs",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\Gestor de Articulos\\Gestion de Articulos\\negocio\\FavoritoNegocio.cs",
+              "RelativeToolTip": "..\\..\\Gestor de Articulos\\Gestion de Articulos\\negocio\\FavoritoNegocio.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T21:47:06.348Z",
+              "WhenOpened": "2024-07-12T00:00:06.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MiPerfil.aspx",
-              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\MiPerfil.aspx",
-              "RelativeDocumentMoniker": "CatalogoWeb\\MiPerfil.aspx",
-              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\MiPerfil.aspx",
-              "RelativeToolTip": "CatalogoWeb\\MiPerfil.aspx",
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Default.aspx",
+              "RelativeDocumentMoniker": "CatalogoWeb\\Default.aspx",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Default.aspx",
+              "RelativeToolTip": "CatalogoWeb\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-07T21:07:43.002Z",
+              "WhenOpened": "2024-07-11T18:01:24.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Favoritos.aspx",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Favoritos.aspx",
+              "RelativeDocumentMoniker": "CatalogoWeb\\Favoritos.aspx",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Favoritos.aspx",
+              "RelativeToolTip": "CatalogoWeb\\Favoritos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-11T16:24:11.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Favoritos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Favoritos.aspx.cs",
+              "RelativeDocumentMoniker": "CatalogoWeb\\Favoritos.aspx.cs",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Favoritos.aspx.cs",
+              "RelativeToolTip": "CatalogoWeb\\Favoritos.aspx.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T16:24:20.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detalles.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Detalles.aspx.cs",
+              "RelativeDocumentMoniker": "CatalogoWeb\\Detalles.aspx.cs",
+              "ToolTip": "C:\\Users\\rooba\\Desktop\\TPFinalNivel3BazanRocio\\TPFinalNivel3BazanRocio\\CatalogoWeb\\Detalles.aspx.cs",
+              "RelativeToolTip": "CatalogoWeb\\Detalles.aspx.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAQwC4AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T23:06:46.113Z",
               "EditorCaption": ""
             }
           ]
