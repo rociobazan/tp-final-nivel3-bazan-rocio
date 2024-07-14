@@ -39,7 +39,7 @@
                                 <a href="Detalles.aspx?Id=<%:art.Id%>" class="btn btn-sm btn-outline-dark">Ver detalles</a>
                             </div>
                         </div>
-                    </div>yh
+                    </div>
                 </div>
             </div>
             <%}%>

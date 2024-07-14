@@ -41,10 +41,12 @@ namespace CatalogoWeb
                     if (EsFavorito(id, idUser))
                     {
                         btnFavorito.Text = "Quitar fav ❤";
+                        
                     }
                     else
                     {
                         btnFavorito.Text = "Agregar fav ♡";
+                        
                     }
                 }
 
@@ -74,11 +76,12 @@ namespace CatalogoWeb
                     if (EsFavorito(idArt, idUser))
                     {
                         negocio.eliminarFavorito(idArt, idUser);
-                        
+                        Response.Redirect(Request.RawUrl);
                     }
                     else
                     {
                         negocio.agregarFavorito(idUser, idArt);
+                        Response.Redirect(Request.RawUrl);
                     }
                 }
 
