@@ -17,16 +17,22 @@ namespace CatalogoWeb
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
+                if (!Seguridad.esAdmin(Session["Usuario"]))
+                {
+                    Session.Add("Error", "Debes ser administrador para ingresar aquí");
+                    Response.Redirect("Error.aspx", false);
+                }
+                
                 Session.Add("listaArticulos", negocio.listar());
                 dgvArticulos.DataSource = Session["listaArticulos"];
                 dgvArticulos.DataBind();
 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
 
@@ -37,24 +43,53 @@ namespace CatalogoWeb
 
         protected void dgvArticulos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string id = dgvArticulos.SelectedDataKey.Value.ToString();
-            Response.Redirect("FormularioArticulos.aspx?id=" + id);
+            try
+            {
+                string id = dgvArticulos.SelectedDataKey.Value.ToString();
+                Response.Redirect("FormularioArticulos.aspx?id=" + id);
+            }
+            catch(Exception ex)
+            {
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
+            }
+                
+                
         }
 
         
 
         protected void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            List<Articulo> lista = (List<Articulo>)Session["listaArticulos"];
-            List<Articulo> listaFiltrada = lista.FindAll(x => x.Nombre.ToUpper().Contains(txtSearch.Text.ToUpper()));
-            dgvArticulos.DataSource = listaFiltrada;
-            dgvArticulos.DataBind();
+            try
+            {
+                List<Articulo> lista = (List<Articulo>)Session["listaArticulos"];
+                List<Articulo> listaFiltrada = lista.FindAll(x => x.Nombre.ToUpper().Contains(txtSearch.Text.ToUpper()));
+                dgvArticulos.DataSource = listaFiltrada;
+                dgvArticulos.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
+            }
+            
+            
+            
         }
 
         protected void btnLimpiar_Click(object sender, EventArgs e)
         {
-            dgvArticulos.DataSource = Session["listaArticulos"];
-            dgvArticulos.DataBind();
+            try
+            {
+                dgvArticulos.DataSource = Session["listaArticulos"];
+                dgvArticulos.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
+            }
         }
 
         protected void cbxFiltro_CheckedChanged(object sender, EventArgs e)
@@ -72,10 +107,10 @@ namespace CatalogoWeb
                 dgvArticulos.DataSource = negocio.filtrar(ddlCampo.SelectedItem.ToString(), ddlCriterio.SelectedItem.ToString(), txtFiltroAvanzado.Text);
                 dgvArticulos.DataBind();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
     }

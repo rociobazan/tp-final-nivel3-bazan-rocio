@@ -24,8 +24,8 @@ namespace CatalogoWeb
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                Session.Add("Error",Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
 
         }
@@ -37,17 +37,14 @@ namespace CatalogoWeb
                 ArticuloNegocio negocio = new ArticuloNegocio();
                 ListaArticulos = negocio.filtrar("Nombre", "contiene", txtSearch.Text);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
 
-        protected void btnFavorito_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         protected void btnDetalles_Click(object sender, EventArgs e)
         {

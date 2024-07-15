@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Detalles.aspx.cs" Inherits="CatalogoWeb.Detalles" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+    function handleImageError(img) {
+        img.onerror = null;
+        img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDyBdayoG4JDHSMsTQma1TmHHXu0L5Dtt37NDtHVHK1r-wk_40PzMtynJd9g5SL_n6ekE&usqp=CAU';
+    }
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="card mt-4 mx-5">
@@ -8,29 +14,40 @@
             <div class="row">
 
                 <div class="col-5">
-                    <asp:Image ImageUrl="https://epichotelsanluis.com/wp-content/uploads/2022/11/placeholder-2.png" ID="imgDetalle" class="img-fluid" alt="Imagen del producto" runat="server" />
+                    <asp:Image ImageUrl="" onerror="handleImageError(this)" ID="imgDetalle" class="img-fluid" alt="Imagen del producto" runat="server" />
                 </div>
-                <div class="col-7">
+                <div class="col-5 mx-auto">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="text-center d-inline">
                             <asp:Label Text="" ID="lblNombre" runat="server" />
                         </h3>
-                        <asp:Button CssClass="d-inline" ID="btnFavorito" OnClick="btnFavorito_Click" Text="Favorito♡" runat="server" />
                     </div>
 
                     <hr />
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col">
-                            <asp:Label Text="" ID="lblCategoria" runat="server" />
-                            <asp:Label Text="" ID="lblMarca" runat="server" />
+                            <asp:Label Text="" ID="lblCategoria" CssClass="badge bg-secondary rounded-pill" runat="server" />
+                            <asp:Label Text="" ID="lblMarca" CssClass="badge bg-secondary rounded-pill " runat="server" />
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-4">
-                            <asp:Label Text="" ID="lblPrecio" runat="server" />
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <asp:Label Text="" ID="lblPrecio" CssClass="fs-2" runat="server" />
                         </div>
                     </div>
-                    <asp:Label Text="text" ID="lblDescripción" runat="server" />
+                    <div class="row mb-3">
+                        <asp:Label Text="text" ID="lblDescripción" runat="server" />
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3">
+                            <asp:Button CssClass="d-inline btn btn-primary" ID="btnFavorito" OnClick="btnFavorito_Click" Text="Favorito♡" runat="server" />
+                        </div>
+                        <div class="col-3">
+                            <asp:Button CssClass="d-inline btn btn-secondary" ID="btnVolver" OnClick="btnVolver_Click" Text="Volver" runat="server" />
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>

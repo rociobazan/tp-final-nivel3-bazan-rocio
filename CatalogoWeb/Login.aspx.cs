@@ -9,7 +9,7 @@ using negocio;
 
 namespace CatalogoWeb
 {
-    public partial class detalle : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,15 +32,15 @@ namespace CatalogoWeb
                 }
                 else
                 {
-                    Session.Add("Error", "User o pass incorrectos");
-                    Response.Redirect("Error.aspx");
+                    Session.Add("Error", "Usuario o contraseña incorrectos. Intente de nuevo");
+                    Response.Redirect("Error.aspx", false);
                 }
             }
             catch (Exception ex) 
             {
 
                 Session.Add("Error", ex.ToString());
-                Response.Redirect("Error.aspx");
+                Response.Redirect("Error.aspx", false);
             }
         }
     }

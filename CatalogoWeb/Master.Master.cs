@@ -11,33 +11,33 @@ namespace CatalogoWeb
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Seguridad.sesionActiva(Session["Usuario"]))
+            imgAvatar.ImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoiVnnWu_QbtFist_W7Hbz2V4drhwXDVyiw&s";
+
+
+            if (!(Page is Registro || Page is Default || Page is Login || Page is Error))
             {
-                btnFav.Attributes["href"] = "Favoritos.aspx";
-                Usuario user = (Usuario)Session["Usuario"];
-                lblUser.Text = user.Nombre;
-                
-                if (!string.IsNullOrEmpty(user.ImagenPerfil))
+                if (Seguridad.sesionActiva(Session["Usuario"]))
                 {
-                    imgAvatar.ImageUrl = "~Images/" + user.ImagenPerfil;
+                    Usuario user = (Usuario)Session["Usuario"];
+                    lblUser.Text = user.Nombre;
+
+                    if (!string.IsNullOrEmpty(user.ImagenPerfil))
+                        imgAvatar.ImageUrl = "~Images/" + user.ImagenPerfil;
+
                 }
- 
-            }
-            else
-            {
-                btnFav.Attributes["href"] = "Login.aspx";
+                else
+                {
+                    Response.Redirect("Login.aspx", false);
+                }
             }
 
 
         }
 
-        protected void btnSearch_Click(object sender, EventArgs e)
-        {
 
-        }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {

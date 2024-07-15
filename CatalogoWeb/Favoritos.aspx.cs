@@ -41,10 +41,11 @@ namespace CatalogoWeb
 
                 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
 

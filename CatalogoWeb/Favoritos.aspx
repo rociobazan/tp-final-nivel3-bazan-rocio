@@ -45,7 +45,7 @@
         <%}
             else
             {%>
-        <h2>Comience a agregar favoritos!! :D</h2>
+        <h2 class="text-center">Comience a agregar favoritos!! :D</h2>
         <%} %>
     </div>
 </asp:Content>

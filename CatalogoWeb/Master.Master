@@ -26,10 +26,13 @@
                                 <a class="nav-link active" aria-current="page" href="default.aspx">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ListadoArticulos.aspx">Lista</a>
+                                <a class="nav-link active" href="ListadoArticulos.aspx">Lista</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" Id="btnFav" href="" runat="server">Favoritos</a>
+                                <a class="nav-link active" id="btnFav" href="" runat="server">Favoritos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="btnMiPerfil" href="MiPerfil.aspx" runat="server">Mi Perfil</a>
                             </li>
                         </ul>
 
@@ -50,10 +53,10 @@
                                 else
                                 { %>
                             <div class="mx-2 my-auto">
-                                <asp:LinkButton Text="text" ID="lblUser"  CssClass="text-light mx-auto me-2 text-decoration-none" OnClick="lblUser_Click" runat="server" />
+                                <asp:LinkButton Text="text" ID="lblUser" CssClass="text-light mx-auto me-2 text-decoration-none" OnClick="lblUser_Click" runat="server" />
                             </div>
                             <div class="mx-2">
-                                <asp:Image ID="imgAvatar" ImageUrl="https://img.freepik.com/vector-premium/icono-cuenta-icono-usuario-graficos-vectoriales_292645-552.jpg?w=740"
+                                <asp:Image ID="imgAvatar" ImageUrl=""
                                     Style="height: 40px; width: 40px; border-radius: 50%;" runat="server" />
                             </div>
                             <div class="mx-2">

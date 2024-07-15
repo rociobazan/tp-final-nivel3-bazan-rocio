@@ -21,7 +21,7 @@ namespace CatalogoWeb
             try
             {   //Capturo el id del producto, sino vacío
                 string id = Request.QueryString["Id"] != null ? Request.QueryString["Id"].ToString() : "";
-               //Si efectivament tengo un id y no es postback cargo los detalles del prod
+                //Si efectivament tengo un id y no es postback cargo los detalles del prod
                 if (id != "" && !IsPostBack)
                 {
 
@@ -32,7 +32,7 @@ namespace CatalogoWeb
                     lblNombre.Text = seleccionado.Nombre;
                     lblMarca.Text = seleccionado.Marca.ToString();
                     lblCategoria.Text = seleccionado.Categoria.ToString();
-                    lblPrecio.Text = seleccionado.Precio.ToString();
+                    lblPrecio.Text = "$" + seleccionado.Precio.ToString("F2");
                     lblDescripción.Text = seleccionado.Descripcion.ToString();
                 }
                 if (Seguridad.sesionActiva(Session["Usuario"]))
@@ -41,55 +41,63 @@ namespace CatalogoWeb
                     if (EsFavorito(id, idUser))
                     {
                         btnFavorito.Text = "Quitar fav ❤";
-                        
                     }
                     else
                     {
                         btnFavorito.Text = "Agregar fav ♡";
-                        
                     }
                 }
 
-                
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
 
         protected void btnFavorito_Click(object sender, EventArgs e)
         {
-            string idArt = Request.QueryString["Id"];
-            Usuario usuario = (Usuario)Session["Usuario"];
-
-            if (Seguridad.sesionActiva(Session["Usuario"]))
+            try
             {
-                int idUser = usuario.Id;
-                FavoritoNegocio negocio = new FavoritoNegocio();
-                
+                string idArt = Request.QueryString["Id"];
+                Usuario usuario = (Usuario)Session["Usuario"];
 
                 if (Seguridad.sesionActiva(Session["Usuario"]))
                 {
-                    if (EsFavorito(idArt, idUser))
-                    {
-                        negocio.eliminarFavorito(idArt, idUser);
-                        Response.Redirect(Request.RawUrl);
-                    }
-                    else
-                    {
-                        negocio.agregarFavorito(idUser, idArt);
-                        Response.Redirect(Request.RawUrl);
-                    }
-                }
+                    int idUser = usuario.Id;
+                    FavoritoNegocio negocio = new FavoritoNegocio();
 
+
+                    if (Seguridad.sesionActiva(Session["Usuario"]))
+                    {
+                        if (EsFavorito(idArt, idUser))
+                        {
+                            negocio.eliminarFavorito(idArt, idUser);
+                            Response.Redirect(Request.RawUrl);
+                        }
+                        else
+                        {
+                            negocio.agregarFavorito(idUser, idArt);
+                            Response.Redirect(Request.RawUrl);
+                        }
+                    }
+
+                }
+                else
+                {
+                    Response.Redirect("Login.aspx", false);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Response.Redirect("Login.aspx", false);
+
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
+
+
 
         }
 
@@ -97,19 +105,31 @@ namespace CatalogoWeb
         {
             int idArticulo = int.Parse(idArt);
             FavoritoNegocio negocio = new FavoritoNegocio();
-            List <int>listaIdFavoritos = negocio.listarFavorito(idUser);
+            List<int> listaIdFavoritos = negocio.listarFavorito(idUser);
 
             foreach (var id in listaIdFavoritos)
             {
-                if (id == idArticulo) 
+                if (id == idArticulo)
                 {
                     return true;
                 }
-
             }
-
             return false;
         }
 
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Response.Redirect("Default.aspx", false);
+            }
+            catch (Exception ex)
+            {
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
+            }
+            
+
+        }
     }
 }

@@ -61,16 +61,24 @@ namespace CatalogoWeb
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
 
         protected void txtImageUrl_TextChanged(object sender, EventArgs e)
         {
-            imgArticulo.ImageUrl = txtImageUrl.Text;
+            try
+            {
+                imgArticulo.ImageUrl = txtImageUrl.Text;
+            }
+            catch (Exception ex)
+            {
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
+            } 
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
@@ -105,16 +113,16 @@ namespace CatalogoWeb
                 
                 Response.Redirect("ListadoArticulos.aspx", false);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
 
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ListadoArticulos.aspx");
+            Response.Redirect("ListadoArticulos.aspx", false);
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
@@ -125,11 +133,20 @@ namespace CatalogoWeb
         protected void btnEliminarPermanente_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            if (cbxEliminar.Checked)
+            try
             {
-                negocio.eliminar(int.Parse(txtId.Text));
-                Response.Redirect("ListadoArticulos.aspx", false);
+                if (cbxEliminar.Checked)
+                {
+                    negocio.eliminar(int.Parse(txtId.Text));
+                    Response.Redirect("ListadoArticulos.aspx", false);
+                }
             }
+            catch (Exception ex)
+            {
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
+            }
+            
         }
     }
 }

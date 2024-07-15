@@ -8,6 +8,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
+    <script type="text/javascript">
+        function handleImageError(img) {
+            img.onerror = null;
+            img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDyBdayoG4JDHSMsTQma1TmHHXu0L5Dtt37NDtHVHK1r-wk_40PzMtynJd9g5SL_n6ekE&usqp=CAU';
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,10 +35,10 @@
             %>
             <div class="col">
                 <div class="card h-100" style="overflow: hidden;">
-                    <img src="<%:art.ImagenUrl %>" style="height: 18rem; object-fit: cover" class="card-img-top img-fluid" alt="imagen del producto">
+                    <img src="<%:art.ImagenUrl %>" onerror="handleImageError(this)" style="height: 18rem; object-fit: cover" class="card-img-top img-fluid" alt="imagen del producto">
                     <div class="card-body">
                         <h5 class="card-title"><%:art.Nombre %></h5>
-                        <h6><%:art.Precio %></h6>
+                        <h6>$<%:art.Precio.ToString("F2") %></h6>
                         <p class="card-text"><%:art.Descripcion %></p>
                         <div class="row">
                             <div class="col">

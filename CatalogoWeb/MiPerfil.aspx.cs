@@ -15,28 +15,28 @@ namespace CatalogoWeb
         {
             if (!IsPostBack)
             {
-                if (Seguridad.sesionActiva(Session["Usuario"]))
+
+                try
                 {
-                    try
+                    Usuario user = (Usuario)Session["Usuario"];
+
+                    txtNombre.Text = user.Nombre;
+                    txtApellido.Text = user.Apellido;
+                    txtEmail.Text = user.Email;
+                    txtEmail.ReadOnly = true;
+
+                    if (!string.IsNullOrEmpty(user.ImagenPerfil))
                     {
-                        Usuario user = (Usuario)Session["Usuario"];
-
-                        txtNombre.Text = user.Nombre;
-                        txtApellido.Text = user.Apellido;
-                        txtEmail.Text = user.Email;
-
-                        if (!string.IsNullOrEmpty(user.ImagenPerfil))
-                        {
-                            imgPerfil.ImageUrl = "~/Images/" + user.ImagenPerfil;
-                        }
-
+                        imgPerfil.ImageUrl = "~/Images/" + user.ImagenPerfil + "?v=" + DateTime.Now.Ticks.ToString(); ;
                     }
-                    catch (Exception ex)
-                    {
 
-                        throw ex;
-                    }
                 }
+                catch (Exception ex)
+                {
+                    Session.Add("Error", Seguridad.manejoDeError(ex));
+                    Response.Redirect("Error.aspx", false);
+                }
+
             }
         }
 
@@ -52,7 +52,7 @@ namespace CatalogoWeb
                     string ruta = Server.MapPath("./Images/");
                     txtImagenPerfil.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
                     user.ImagenPerfil = "perfil-" + user.Id + ".jpg";
-                    imgPerfil.ImageUrl = user.ImagenPerfil;
+
                 }
 
                 user.Nombre = txtNombre.Text;
@@ -61,18 +61,19 @@ namespace CatalogoWeb
                 negocio.Actualizar(user);
 
                 Image img = (Image)Master.FindControl("imgAvatar");
-                img.ImageUrl = "~/images/" + user.ImagenPerfil;
+                img.ImageUrl = "~/images/" + user.ImagenPerfil + "?v=" + DateTime.Now.Ticks.ToString();
+                imgPerfil.ImageUrl = "~/images/" + user.ImagenPerfil + "?v=" + DateTime.Now.Ticks.ToString();
 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Session.Add("Error", Seguridad.manejoDeError(ex));
+                Response.Redirect("Error.aspx", false);
             }
         }
     }
 
 
-   
+
 }
