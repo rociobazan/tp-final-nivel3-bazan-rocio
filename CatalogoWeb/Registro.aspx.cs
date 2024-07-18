@@ -20,12 +20,30 @@ namespace CatalogoWeb
         {
             try
             {
+
+                //Si están ok las validaciones del front sigue, sino no
+                Page.Validate();
+                if (!Page.IsValid)
+                    return;
+
                 Usuario user = new Usuario();
                 UsuarioNegocio negocio = new UsuarioNegocio();
                 user.Email = txtEmail.Text;
                 user.Pass = txtPass.Text;
-                user.Id = negocio.insertarNuevo(user);
-                Session.Add("Usuario", user);
+
+                //Si el email es válido y la contra también, lo registra. Sino pantalla de error.
+                if (Helper.validaUserPass(user.Email, user.Pass))
+                {
+                    user.Id = negocio.insertarNuevo(user);
+                    Session.Add("Usuario", user);
+                    Response.Redirect("Default.aspx", false);
+                }
+                else
+                {
+                    Session.Add("Error", "Ingrese un email y una contraseña válidos");
+                    Response.Redirect("Error.aspx", false);
+                }
+                
             }
             catch (Exception ex)
             {

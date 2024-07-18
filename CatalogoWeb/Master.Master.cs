@@ -41,12 +41,12 @@ namespace CatalogoWeb
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Login.aspx", false);
         }
 
         protected void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Registro.aspx");
+            Response.Redirect("Registro.aspx", false);
         }
 
         protected void lblUser_Click(object sender, EventArgs e)

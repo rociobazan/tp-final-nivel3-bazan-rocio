@@ -22,11 +22,22 @@ namespace CatalogoWeb
             UsuarioNegocio negocio = new UsuarioNegocio();
             try
             {
+                Page.Validate();
+                if (!Page.IsValid)
+                    return;
+                
                 user.Email = txtUsuario.Text;
                 user.Pass = txtContraseña.Text;
 
-                if (negocio.Login(user))
+                if(!Helper.validaUserPass(user.Email, user.Pass))
                 {
+                    Session.Add("Error", "Ingrese un email y una contraseña válidos");
+                    Response.Redirect("Error.aspx", false);
+                } 
+                
+
+                if (negocio.Login(user))
+                { 
                     Session.Add("Usuario", user);
                     Response.Redirect("MiPerfil.aspx", false);
                 }

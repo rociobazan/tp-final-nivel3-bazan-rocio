@@ -36,14 +36,6 @@
                             </li>
                         </ul>
 
-                        <%--<form class="d-flex" role="search">
-                            
-                            <asp:TextBox CssClass="form-control me-2" type="search" ID="tbxSearch" placeholder="Search" aria-label="Search" runat="server" />
-                            <asp:Button OnClick="btnSearch_Click" CssClass="btn btn-outline-success" ID="btnSearch" Text="Buscar" runat="server" />
-                        </form>--%>
-
-
-
                         <div class="d-flex p-2">
                             <%if (!negocio.Seguridad.sesionActiva(Session["Usuario"]))
                                 {%>

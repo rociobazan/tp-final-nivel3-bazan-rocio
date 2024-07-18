@@ -12,5 +12,12 @@ namespace CatalogoWeb
         protected void Application_Start(object sender, EventArgs e)
         {
         }
+        void Application_Error(object sender, EventArgs e)
+        {
+            Exception exc = Server.GetLastError();
+
+            Session.Add("Error", exc.Message);
+            Response.Redirect("Error.aspx", false);
+        }
     }
 }
