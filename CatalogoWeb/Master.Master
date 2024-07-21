@@ -29,7 +29,7 @@
                                 <a class="nav-link active" href="ListadoArticulos.aspx">Lista</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="btnFav" href="" runat="server">Favoritos</a>
+                                <a class="nav-link active" id="btnFav" href="Favoritos.aspx" runat="server">Favoritos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" id="btnMiPerfil" href="MiPerfil.aspx" runat="server">Mi Perfil</a>

@@ -16,28 +16,19 @@ namespace CatalogoWeb
         {
             imgAvatar.ImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoiVnnWu_QbtFist_W7Hbz2V4drhwXDVyiw&s";
 
-
-            if (!(Page is Registro || Page is Default || Page is Login || Page is Error))
+            if (!(Page is Registro || Page is Default || Page is Login || Page is Error || Page is Detalles))
             {
                 if (Seguridad.sesionActiva(Session["Usuario"]))
-                {
-                    Usuario user = (Usuario)Session["Usuario"];
-                    lblUser.Text = user.Nombre;
-
-                    if (!string.IsNullOrEmpty(user.ImagenPerfil))
-                        imgAvatar.ImageUrl = "~Images/" + user.ImagenPerfil;
-
-                }
+                  cargarBanner();
                 else
-                {
                     Response.Redirect("Login.aspx", false);
-                }
             }
-
-
+            else
+            {
+                if (Seguridad.sesionActiva(Session["Usuario"]))
+                   cargarBanner();
+            }
         }
-
-
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
@@ -58,6 +49,15 @@ namespace CatalogoWeb
         {
             Session.Clear();
             Response.Redirect("Default.aspx", false);
+        }
+
+        protected void cargarBanner()
+        {
+            Usuario user = (Usuario)Session["Usuario"];
+            lblUser.Text = user.Nombre;
+
+            if (!string.IsNullOrEmpty(user.ImagenPerfil))
+                imgAvatar.ImageUrl = "~Images/" + user.ImagenPerfil;
         }
     }
 }

@@ -40,11 +40,9 @@
                         <h5 class="card-title"><%:art.Nombre %></h5>
                         <h6>$<%:art.Precio.ToString("F2") %></h6>
                         <p class="card-text"><%:art.Descripcion %></p>
-                        <div class="row">
-                            <div class="col">
-                                <a href="Detalles.aspx?Id=<%:art.Id%>" class="btn btn-sm btn-outline-dark">Ver detalles</a>
-                            </div>
-                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="Detalles.aspx?Id=<%:art.Id%>" class="btn btn-primary w-100">Ver detalles</a>
+                        </div>                    
                     </div>
                 </div>
             </div>

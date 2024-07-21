@@ -15,9 +15,15 @@ namespace CatalogoWeb
         {
             if (!IsPostBack)
             {
-
                 try
                 {
+
+                    if (!Seguridad.sesionActiva(Session["Usuario"]))
+                    {
+                        Response.Redirect("Login.aspx", false);
+                        return;
+                    }
+
                     Usuario user = (Usuario)Session["Usuario"];
 
                     txtNombre.Text = user.Nombre;
@@ -44,8 +50,22 @@ namespace CatalogoWeb
         {
             try
             {
+                Page.Validate();
+                if (!Page.IsValid)
+                    return;
+
                 UsuarioNegocio negocio = new UsuarioNegocio();
                 Usuario user = (Usuario)Session["Usuario"];
+
+                user.Nombre = txtNombre.Text;
+                user.Apellido = txtApellido.Text;
+
+                if(!Helper.validaTexto(user.Nombre) || !Helper.validaTexto(user.Apellido))
+                {
+                    Session.Add("Error", "Los campos nombre y apellido no pueden estar vacíos.Ingrese un nombre y apellido válidos.");
+                    Response.Redirect("Error.aspx", false);
+                    return;
+                }
 
                 if (txtImagenPerfil.PostedFile.FileName != "")
                 {
@@ -54,9 +74,6 @@ namespace CatalogoWeb
                     user.ImagenPerfil = "perfil-" + user.Id + ".jpg";
 
                 }
-
-                user.Nombre = txtNombre.Text;
-                user.Apellido = txtApellido.Text;
 
                 negocio.Actualizar(user);
 

@@ -75,15 +75,18 @@ namespace CatalogoWeb
                         if (EsFavorito(idArt, idUser))
                         {
                             negocio.eliminarFavorito(idArt, idUser);
-                            Response.Redirect(Request.RawUrl);
+                            Response.Redirect(Request.RawUrl, false);
+
                         }
                         else
                         {
                             negocio.agregarFavorito(idUser, idArt);
-                            Response.Redirect(Request.RawUrl);
-                        }
-                    }
+                            Response.Redirect(Request.RawUrl, false);
 
+                        }
+
+                    }
+                    
                 }
                 else
                 {
@@ -128,7 +131,7 @@ namespace CatalogoWeb
                 Session.Add("Error", Seguridad.manejoDeError(ex));
                 Response.Redirect("Error.aspx", false);
             }
-            
+
 
         }
     }

@@ -44,8 +44,6 @@ namespace CatalogoWeb
             }
         }
 
-        
-
         protected void btnDetalles_Click(object sender, EventArgs e)
         {
             Response.Redirect("Detalles.aspx", false);

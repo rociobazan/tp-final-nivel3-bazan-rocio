@@ -39,13 +39,10 @@
                         <asp:Label Text="text" ID="lblDescripción" runat="server" />
                     </div>
                     <div class="row mb-3">
-                        <div class="col-3">
-                            <asp:Button CssClass="d-inline btn btn-primary" ID="btnFavorito" OnClick="btnFavorito_Click" Text="Favorito♡" runat="server" />
+                        <div class="col-12 d-flex justify-content-between">
+                            <asp:Button CssClass="btn btn-primary w-100 me-2" ID="btnFavorito" OnClick="btnFavorito_Click" Text="Favorito♡" runat="server" />
+                            <asp:Button CssClass="btn btn-secondary w-100 ms-2" ID="btnVolver" OnClick="btnVolver_Click" Text="Volver" runat="server" />
                         </div>
-                        <div class="col-3">
-                            <asp:Button CssClass="d-inline btn btn-secondary" ID="btnVolver" OnClick="btnVolver_Click" Text="Volver" runat="server" />
-                        </div>
-
                     </div>
 
                 </div>

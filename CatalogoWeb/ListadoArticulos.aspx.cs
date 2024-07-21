@@ -46,7 +46,7 @@ namespace CatalogoWeb
             try
             {
                 string id = dgvArticulos.SelectedDataKey.Value.ToString();
-                Response.Redirect("FormularioArticulos.aspx?id=" + id);
+                Response.Redirect("FormularioArticulos.aspx?id=" + id, false);
             }
             catch(Exception ex)
             {
@@ -56,8 +56,6 @@ namespace CatalogoWeb
                 
                 
         }
-
-        
 
         protected void txtSearch_TextChanged(object sender, EventArgs e)
         {
@@ -98,7 +96,6 @@ namespace CatalogoWeb
             txtSearch.Enabled = !filtroAvanzado;
         }
 
-        
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             try

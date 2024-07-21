@@ -26,11 +26,13 @@ namespace CatalogoWeb
                     List<Categoria> categorias = categoriaNegocio.listar(); //trae lista de categorías desde DB
 
                     ddlMarca.DataSource = marcas;
+                    
                     ddlMarca.DataValueField = "id";  //valor que capturo
                     ddlMarca.DataTextField = "Descripcion"; //Texto que muestro
                     ddlMarca.DataBind();
 
                     ddlCategoria.DataSource = categorias;
+                    ddlCategoria.SelectedIndex = -1;
                     ddlCategoria.DataValueField = "id";
                     ddlCategoria.DataTextField = "Descripcion";
                     ddlCategoria.DataBind();
@@ -88,7 +90,17 @@ namespace CatalogoWeb
 
             try
             {
+                Page.Validate();
+                if (!Page.IsValid)
+                    return;
                 
+                if(!Helper.validaFormulario(txtCodigo.Text, txtNombre.Text, txtDescripcion.Text, txtPrecio.Text))
+                {
+                    Session.Add("Error", "Verifique que los campos obligatorios estén completos y que el precio tenga formato numérico");
+                    Response.Redirect("Error.aspx", true);
+                    return;
+                }
+
                 nuevo.Codigo= txtCodigo.Text;
                 nuevo.Nombre= txtNombre.Text;
                 nuevo.Descripcion= txtDescripcion.Text;
@@ -148,5 +160,7 @@ namespace CatalogoWeb
             }
             
         }
+
+        
     }
 }
