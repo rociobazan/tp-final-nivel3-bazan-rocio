@@ -5,9 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoWeb", "CatalogoWeb\CatalogoWeb.csproj", "{9F7D0AF9-F4BB-4896-84DB-B2CA01AD99AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "..\..\Gestor de Articulos\Gestion de Articulos\Dominio\dominio.csproj", "{2A3176CF-83D7-4A62-935C-35DF11AD9279}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "Dominio\dominio.csproj", "{2A3176CF-83D7-4A62-935C-35DF11AD9279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "..\..\Gestor de Articulos\Gestion de Articulos\negocio\negocio.csproj", "{9E4EC984-3B04-438A-A944-81220CDD8C68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{9E4EC984-3B04-438A-A944-81220CDD8C68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

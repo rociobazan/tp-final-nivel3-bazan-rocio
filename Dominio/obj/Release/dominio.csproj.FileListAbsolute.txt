@@ -1,0 +1,12 @@
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\bin\Release\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\bin\Release\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Release\dominio.csproj.AssemblyReference.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Release\dominio.csproj.CoreCompileInputs.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Release\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Release\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\Dominio\bin\Release\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\Dominio\bin\Release\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\Dominio\obj\Release\dominio.csproj.AssemblyReference.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\Dominio\obj\Release\dominio.csproj.CoreCompileInputs.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\Dominio\obj\Release\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\Dominio\obj\Release\Dominio.pdb

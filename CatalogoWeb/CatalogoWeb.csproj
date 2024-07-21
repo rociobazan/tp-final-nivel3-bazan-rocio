@@ -215,11 +215,11 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Gestor de Articulos\Gestion de Articulos\Dominio\dominio.csproj">
+    <ProjectReference Include="..\Dominio\dominio.csproj">
       <Project>{2a3176cf-83d7-4a62-935c-35df11ad9279}</Project>
       <Name>dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Gestor de Articulos\Gestion de Articulos\negocio\negocio.csproj">
+    <ProjectReference Include="..\negocio\negocio.csproj">
       <Project>{9e4ec984-3b04-438a-a944-81220cdd8c68}</Project>
       <Name>negocio</Name>
     </ProjectReference>

@@ -4,3 +4,9 @@ C:\Users\rooba\Desktop\TP\Gestion de Articulos\Dominio\obj\Debug\Dominio.csproj.
 C:\Users\rooba\Desktop\TP\Gestion de Articulos\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\rooba\Desktop\TP\Gestion de Articulos\Dominio\obj\Debug\Dominio.dll
 C:\Users\rooba\Desktop\TP\Gestion de Articulos\Dominio\obj\Debug\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\bin\Debug\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\bin\Debug\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Debug\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Dominio\obj\Debug\Dominio.pdb

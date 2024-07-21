@@ -1,0 +1,27 @@
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\bin\Release\negocio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\bin\Release\negocio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\bin\Release\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\bin\Release\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.csproj.AssemblyReference.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.csproj.CoreCompileInputs.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.csproj.Up2Date
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\bin\Release\negocio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\bin\Release\negocio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\bin\Release\Dominio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\bin\Release\Dominio.pdb
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.csproj.AssemblyReference.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.csproj.CoreCompileInputs.cache
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.csproj.Up2Date
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.dll
+C:\Users\rooba\Desktop\Gestor de Articulos\Gestion de Articulos\Gestion de Articulos\negocio\obj\Release\negocio.pdb
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\bin\Release\negocio.dll
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\bin\Release\negocio.pdb
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\bin\Release\Dominio.dll
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\bin\Release\Dominio.pdb
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\obj\Release\negocio.csproj.AssemblyReference.cache
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\obj\Release\negocio.csproj.CoreCompileInputs.cache
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\obj\Release\negocio.csproj.Up2Date
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\obj\Release\negocio.dll
+C:\Users\rooba\Desktop\TPFinalNivel3BazanRocio\TPFinalNivel3BazanRocio\negocio\obj\Release\negocio.pdb
